@@ -19,8 +19,8 @@ while True:
         for idx, lm in enumerate(results.pose_landmarks.landmark):
             height, width, channel = img.shape
             print(lm.x, lm.y)
-            cx,cy = lm.x*width, lm.y*height
-
+            cx, cy = int(lm.x * width), int(lm.y * height)
+            cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
 
     curr_time = time.time()
     fps = 1 / (curr_time - prev_time)
