@@ -38,10 +38,10 @@ class PoseDetector:
                 lm_list.append([idx, cx,cy])
                 if draw:
                     cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
-
+        return lm_list
 
 def main():
-    cap = cv2.VideoCapture("pose_videos/1.mp4")
+    cap = cv2.VideoCapture(0)
     prev_time = 0
     detector = PoseDetector()
 
@@ -49,7 +49,7 @@ def main():
     while True:
         success, img = cap.read()
         img = detector.locatePose(img)
-        detector.getPosition(img)
+        lm_list = detector.getPosition(img)
 
         curr_time = time.time()
         fps = 1 / (curr_time - prev_time)
