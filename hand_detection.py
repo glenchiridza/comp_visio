@@ -5,7 +5,7 @@ import time
 cap = cv2.VideoCapture(0)
 mpHands = mp.solutions.hands
 hands = mpHands.Hands()
-
+mpDraw = mp.solutions.drawing_utils
 
 
 
@@ -18,7 +18,10 @@ while True:
     # multi_hand_landmarks shows the coords if hand detected else None
 
     # extract multiple hands
-
+    if results.multi_hand_landmarks:
+        for handlms in results.multi_hand_landmarks:
+            # use mediapipe function to draw all points on hand and there are almost 21 points
+            mpDraw.draw_landmarks(img, handlms)
 
     cv2.imshow("Image",img)
     cv2.waitKey(1)
