@@ -21,7 +21,7 @@ while True:
     if results.multi_hand_landmarks:
         for handlms in results.multi_hand_landmarks:
             # use mediapipe function to draw all points on hand and there are almost 21 points
-            mpDraw.draw_landmarks(img, handlms)
+            mpDraw.draw_landmarks(img, handlms, mpHands.HAND_CONNECTIONS)
 
     cv2.imshow("Image",img)
     cv2.waitKey(1)
