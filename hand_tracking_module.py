@@ -46,7 +46,7 @@ class handleDetector():
                 # print(idx, cx, cy)
                 lm_list.append([idx, cx, cy])
                 if draw:
-                    cv2.circle(img, (cx, cy), 15, (255, 234, 255), cv2.FILLED)
+                    cv2.circle(img, (cx, cy), 8, (255, 234, 255), cv2.FILLED)
 
         return lm_list
 
