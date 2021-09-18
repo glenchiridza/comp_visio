@@ -4,12 +4,15 @@ import time
 
 
 mpPose = mp.solutions.pose
+pose = mpPose.Pose()
 
 cap = cv2.VideoCapture("pose_videos/1.mp4")
 prev_time = 0
 
 while True:
     success, img = cap.read()
+    imgRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+
 
     curr_time = time.time()
     fps = 1/(curr_time - prev_time)
