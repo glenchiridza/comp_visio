@@ -20,18 +20,24 @@ class PoseDetector:
 
     def locatePose(self, img, draw=True):
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        results = self.pose.process(imgRGB)
+        self.results = self.pose.process(imgRGB)
 
-        if results.pose_landmarks:
+        if self.results.pose_landmarks:
             if draw:
-                self.mpDraw.draw_landmarks(img, results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
+                self.mpDraw.draw_landmarks(img, self.results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
 
+        return img
 
-            # for idx, lm in enumerate(results.pose_landmarks.landmark):
-            #     height, width, channel = img.shape
-            #     print(lm.x, lm.y)
-            #     cx, cy = int(lm.x * width), int(lm.y * height)
-            #     cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
+    def getPosition(self,img,draw=True):
+        lm_list = []
+        if self.results.pose_landmarks:
+            for idx, lm in enumerate(self.results.pose_landmarks.landmark):
+                height, width, channel = img.shape
+                print(lm.x, lm.y)
+                cx, cy = int(lm.x * width), int(lm.y * height)
+                lm_list.append([idx, cx,cy])
+                if draw:
+                    cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
 
 
 def main():
@@ -42,7 +48,8 @@ def main():
 
     while True:
         success, img = cap.read()
-        detector.locatePose(img)
+        img = detector.locatePose(img)
+        detector.getPosition(img)
 
         curr_time = time.time()
         fps = 1 / (curr_time - prev_time)
