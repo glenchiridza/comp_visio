@@ -28,23 +28,23 @@ class PoseDetector:
 
         return img
 
-    def getPosition(self,img,draw=True):
+    def getPosition(self, img, draw=True):
         lm_list = []
         if self.results.pose_landmarks:
             for idx, lm in enumerate(self.results.pose_landmarks.landmark):
                 height, width, channel = img.shape
                 print(lm.x, lm.y)
                 cx, cy = int(lm.x * width), int(lm.y * height)
-                lm_list.append([idx, cx,cy])
+                lm_list.append([idx, cx, cy])
                 if draw:
                     cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
         return lm_list
+
 
 def main():
     cap = cv2.VideoCapture(0)
     prev_time = 0
     detector = PoseDetector()
-
 
     while True:
         success, img = cap.read()
