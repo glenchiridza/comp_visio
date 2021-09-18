@@ -21,6 +21,17 @@ while True:
     # extract multiple hands
     if results.multi_hand_landmarks:
         for handlms in results.multi_hand_landmarks:
+            # get the landmark information, x,y coords
+            for idx, lm in enumerate(handlms.landmark):
+                # get the pixels out of the image decimal values
+                height,width,channels = img.shape
+                cx, cy = int(lm.x*width), int(lm.y*height)
+                print(idx,cx,cy)
+                # if id of landmark is 0
+                if idx == 0:
+
+
+
             # use mediapipe function to draw all points on hand and there are almost 21 points
             mpDraw.draw_landmarks(img, handlms, mpHands.HAND_CONNECTIONS)
 
