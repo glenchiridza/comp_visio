@@ -4,15 +4,17 @@ import time
 
 class handleDetector():
     def __init__(self, mode=False,max_hands =2,
-                 detection_conf=0,5,track_conf=0.5):
+                 detection_conf=0.5,track_conf=0.5):
         self.mode = mode
         self.max_hands = max_hands
         self.detection_conf = detection_conf
         self.track_conf = track_conf
 
-mpHands = mp.solutions.hands
-hands = mpHands.Hands()
-mpDraw = mp.solutions.drawing_utils
+        self.mpHands = mp.solutions.hands
+        self.hands = self.mpHands.Hands(self.mode,self.max_hands,
+                                        self.detection_conf,self.track_conf)
+        self.mpDraw = mp.solutions.drawing_utils
+
 
 prevTime = 0
 currTime = 0
