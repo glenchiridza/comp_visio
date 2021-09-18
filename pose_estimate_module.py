@@ -3,39 +3,46 @@ import mediapipe as mp
 import time
 
 
-
-
 class PoseDetector:
 
-    def __init__(self,mode=False,model_complx=1,smooth=True,
-                 detect_conf=0.5,track_conf=0.5):
+    def __init__(self, mode=False, model_complx=1, smooth=True,
+                 detect_conf=0.5, track_conf=0.5):
         self.mode = mode
         self.model_complx = model_complx
         self.smooth = smooth
         self.detect_conf = detect_conf
         self.track_conf = track_conf
 
-mpDraw = mp.solutions.drawing_utils
-mpPose = mp.solutions.pose
-pose = mpPose.Pose()
-    imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-    results = pose.process(imgRGB)
+        self.mpDraw = mp.solutions.drawing_utils
+        self.mpPose = mp.solutions.pose
+        self.pose = self.mpPose.Pose(self.mode, self.model_complx,
+                                     self.smooth, self.detect_conf, self.track_conf)
 
-    if results.pose_landmarks:
-        mpDraw.draw_landmarks(img, results.pose_landmarks, mpPose.POSE_CONNECTIONS)
-        for idx, lm in enumerate(results.pose_landmarks.landmark):
-            height, width, channel = img.shape
-            print(lm.x, lm.y)
-            cx, cy = int(lm.x * width), int(lm.y * height)
-            cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
+    def locatePose(self, img, draw=True):
+        imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+        results = self.pose.process(imgRGB)
+
+        if results.pose_landmarks:
+            if draw:
+                self.mpDraw.draw_landmarks(img, results.pose_landmarks, self.mpPose.POSE_CONNECTIONS)
+
+
+            # for idx, lm in enumerate(results.pose_landmarks.landmark):
+            #     height, width, channel = img.shape
+            #     print(lm.x, lm.y)
+            #     cx, cy = int(lm.x * width), int(lm.y * height)
+            #     cv2.circle(img, (cx, cy), 5, (255, 243, 255), cv2.FILLED)
 
 
 def main():
     cap = cv2.VideoCapture("pose_videos/1.mp4")
     prev_time = 0
+    detector = PoseDetector()
+
 
     while True:
         success, img = cap.read()
+        detector.locatePose(img)
 
         curr_time = time.time()
         fps = 1 / (curr_time - prev_time)
