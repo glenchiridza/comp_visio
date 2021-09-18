@@ -29,6 +29,7 @@ while True:
                 print(idx,cx,cy)
                 # if id of landmark is 0
                 if idx == 0:
+                    cv2.circle(img, (cx,cy),5,(255,234,255),cv2.FILLED)
 
 
 
