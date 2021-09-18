@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimate/pose_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimate/pose_estimation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_estimate/pose_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +38,11 @@
       <recent name="$PROJECT_DIR$/pose_videos" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/pose_estimate" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.app_hand_track">
+  <component name="RunManager" selected="Python.pose_estimate">
     <configuration name="app_hand_track" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,8 +106,52 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="pose_estimate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="computer_vision" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pose_estimate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pose_estimation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="computer_vision" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pose_estimate" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pose_estimation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pose_estimate" />
+        <item itemvalue="Python.pose_estimation" />
         <item itemvalue="Python.app_hand_track" />
         <item itemvalue="Python.hand_tracking_module" />
         <item itemvalue="Python.hand_detection" />
@@ -127,22 +172,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="691" height="173" key="GridCell.Tab.0.bottom" timestamp="1631988477853">
+    <state width="691" height="173" key="GridCell.Tab.0.bottom" timestamp="1631989204490">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="691" height="173" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1631988477853" />
-    <state width="691" height="173" key="GridCell.Tab.0.center" timestamp="1631988477853">
+    <state width="691" height="173" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1631989204490" />
+    <state width="691" height="173" key="GridCell.Tab.0.center" timestamp="1631989204489">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="691" height="173" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1631988477853" />
-    <state width="691" height="173" key="GridCell.Tab.0.left" timestamp="1631988477852">
+    <state width="691" height="173" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1631989204489" />
+    <state width="691" height="173" key="GridCell.Tab.0.left" timestamp="1631989204489">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="691" height="173" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1631988477852" />
-    <state width="691" height="173" key="GridCell.Tab.0.right" timestamp="1631988477853">
+    <state width="691" height="173" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1631989204489" />
+    <state width="691" height="173" key="GridCell.Tab.0.right" timestamp="1631989204490">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="691" height="173" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1631988477853" />
+    <state width="691" height="173" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1631989204490" />
     <state x="342" y="34" key="SettingsEditor" timestamp="1631961669224">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
