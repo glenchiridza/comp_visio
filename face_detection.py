@@ -17,9 +17,15 @@ while True:
 
     if results.detections:
         for idx, detection in enumerate(results.detections):
-            print(idx, detection)
-            print(detection.score)
-            print(detection.location_data.relative_bounding_box)
+            # mpDraw.draw_detection(img, detection)
+            # print(idx, detection)
+            # print(detection.score)
+            # print(detection.location_data.relative_bounding_box)
+            bboxC = detection.location_data.relative_bounding_box
+            ih,iw,ic = img.shape
+            bbox = int(bboxC.xmin * iw), int(bboxC.ymin * ih), \
+                    int(bboxC.width * iw), int(bboxC.height * ih)
+            cv2.rectangle(img,bbox, (255,0,255),2)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
