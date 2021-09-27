@@ -12,6 +12,14 @@ face_detection = mpFaceDetection.FaceDetection()
 
 while True:
     success, img = cap.read()
+    imgRGB = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
+    results = face_detection.process(imgRGB)
+
+    if results.detections:
+        for idx, detection in enumerate(results.detections):
+            print(idx, detection)
+            print(detection.score)
+            print(detection.location_data.relative_bounding_box)
 
     cTime = time.time()
     fps = 1 / (cTime - pTime)
