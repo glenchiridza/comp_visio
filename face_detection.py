@@ -6,6 +6,8 @@ cap = cv2.VideoCapture("pose_videos/1.mp4")
 pTime = 0
 
 mpFaceDetection = mp.solutions.face_detection
+mpDraw = mp.solutions.drawing_utils
+face_detection = mpFaceDetection.FaceDetection()
 
 
 while True:
