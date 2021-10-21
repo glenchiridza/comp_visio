@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app_pose_estimate.py" beforeDir="false" afterPath="$PROJECT_DIR$/app_pose_estimate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/face_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +43,7 @@
       <recent name="$PROJECT_DIR$/pose_estimate" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.face_detection">
+  <component name="RunManager" selected="Python.app_pose_estimate">
     <configuration name="app_pose_estimate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,10 +151,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app_pose_estimate" />
         <item itemvalue="Python.face_detection" />
         <item itemvalue="Python.hand_detection" />
         <item itemvalue="Python.tester" />
-        <item itemvalue="Python.app_pose_estimate" />
         <item itemvalue="Python.pose_estimate_module" />
       </list>
     </recent_temporary>
@@ -172,29 +173,29 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="710" height="173" key="GridCell.Tab.0.bottom" timestamp="1632775942547">
+    <state width="1341" height="177" key="GridCell.Tab.0.bottom" timestamp="1634230060203">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="710" height="173" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1632775942547" />
-    <state width="710" height="173" key="GridCell.Tab.0.center" timestamp="1632775942547">
+    <state width="1341" height="177" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1634230060203" />
+    <state width="1341" height="177" key="GridCell.Tab.0.center" timestamp="1634230060203">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="710" height="173" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1632775942547" />
-    <state width="710" height="173" key="GridCell.Tab.0.left" timestamp="1632775942546">
+    <state width="1341" height="177" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1634230060203" />
+    <state width="1341" height="177" key="GridCell.Tab.0.left" timestamp="1634230060203">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="710" height="173" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1632775942546" />
-    <state width="710" height="173" key="GridCell.Tab.0.right" timestamp="1632775942547">
+    <state width="1341" height="177" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1634230060203" />
+    <state width="1341" height="177" key="GridCell.Tab.0.right" timestamp="1634230060203">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="710" height="173" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1632775942547" />
+    <state width="1341" height="177" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1634230060203" />
     <state x="342" y="34" key="SettingsEditor" timestamp="1631961669224">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="342" y="34" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1631961669224" />
-    <state x="662" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1632055451300">
+    <state x="662" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1632989251486">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="662" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1632055451300" />
+    <state x="662" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1632989251486" />
   </component>
 </project>

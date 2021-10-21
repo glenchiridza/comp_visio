@@ -3,7 +3,6 @@ import time
 import pose_estimate_module as pm
 
 cap = cv2.VideoCapture(0)
-prev_time = 0
 detector = pm.PoseDetector()
 
 while True:

@@ -7,7 +7,7 @@ pTime = 0
 
 mpFaceDetection = mp.solutions.face_detection
 mpDraw = mp.solutions.drawing_utils
-face_detection = mpFaceDetection.FaceDetection()
+face_detection = mpFaceDetection.FaceDetection(0.75)
 
 
 while True:
