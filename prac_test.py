@@ -24,7 +24,7 @@ while True:
                 cx,cy = int(lm.x * w), int(lm.y*h)
                 print(idx, cx,cy)
                 if idx ==0:
-                    cv2.circle(img,(cx,cy), 10,(0,0,0),cv2.FILLED)
+                    cv2.circle(img,(cx,cy), 10,(255,0,255),cv2.FILLED)
 
             mpDraw.draw_landmarks(img, handlms, mpHands.HAND_CONNECTIONS)
 
