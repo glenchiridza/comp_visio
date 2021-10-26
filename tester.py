@@ -16,10 +16,11 @@ while True:
     print(results.pose_landmarks)
 
     if results.pose_landmarks:
-        mpDraw.draw_landmarks(img, results.pose_landmarks,mpPose.POSE_CONNECTIONS)
-
-
-
+        mpDraw.draw_landmarks(img, results.pose_landmarks, mpPose.POSE_CONNECTIONS)
+        for idx, lm in enumerate(results.pose_landmarks.landmark):
+            h, w, c = img.shape
+            cx, cy = int(lm.x * w), int(lm.y * h)
+            cv2.circle(img, (cx, cy), 9, (255, 255, 255), cv2.FILLED)
 
     curr_time = time.time()
     fps = 1 / (curr_time - prev_time)
