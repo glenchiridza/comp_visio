@@ -23,7 +23,7 @@ class FaceDetector:
                 ih, iw, ic = img.shape
                 bbox = int(bboxC.xmin * iw), int(bboxC.ymin * ih), \
                        int(bboxC.width * iw), int(bboxC.height * ih)
-                bounding_boxes.append(bbox, detection.score)
+                bounding_boxes.append([bbox, detection.score]s)
                 cv2.rectangle(img, bbox, (255, 0, 255), 2)
                 if draw:
                     cv2.putText(img, f"{int(detection.score[0] * 100)}%", (bbox[0], bbox[1] - 20), cv2.FONT_HERSHEY_PLAIN,
