@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tester.py" beforeDir="false" afterPath="$PROJECT_DIR$/tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +42,8 @@
       <recent name="$PROJECT_DIR$/pose_estimate" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tester">
-    <configuration name="app_pose_estimate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.face_detection">
+    <configuration name="face_detection" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,7 +55,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_pose_estimate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_detection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -150,11 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.face_detection" />
         <item itemvalue="Python.tester" />
         <item itemvalue="Python.prac_test_module" />
         <item itemvalue="Python.hand_tracking_module" />
         <item itemvalue="Python.prac_test" />
-        <item itemvalue="Python.app_pose_estimate" />
       </list>
     </recent_temporary>
   </component>
@@ -172,22 +172,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="687" height="175" key="GridCell.Tab.0.bottom" timestamp="1635282468544">
+    <state width="687" height="175" key="GridCell.Tab.0.bottom" timestamp="1635365822514">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1635282468544" />
-    <state width="687" height="175" key="GridCell.Tab.0.center" timestamp="1635282468543">
+    <state width="687" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1635365822514" />
+    <state width="687" height="175" key="GridCell.Tab.0.center" timestamp="1635365822513">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1635282468543" />
-    <state width="687" height="175" key="GridCell.Tab.0.left" timestamp="1635282468543">
+    <state width="687" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1635365822513" />
+    <state width="687" height="175" key="GridCell.Tab.0.left" timestamp="1635365822512">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1635282468543" />
-    <state width="687" height="175" key="GridCell.Tab.0.right" timestamp="1635282468544">
+    <state width="687" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1635365822512" />
+    <state width="687" height="175" key="GridCell.Tab.0.right" timestamp="1635365822513">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1635282468544" />
+    <state width="687" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1635365822513" />
     <state x="342" y="34" key="SettingsEditor" timestamp="1631961669224">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
