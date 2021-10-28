@@ -28,16 +28,22 @@ class FaceMeshDetector:
         # display the results
         if results.multi_face_landmarks:
             for face_lm in results.multi_face_landmarks:
+                faces = []
                 if draw:
                     self.mpDraw.draw_landmarks(img,
                                                face_lm,
                                                self.mp_face_mesh.FACE_CONNECTIONS,
                                                self.draw_spec, self.draw_spec)
                 # find all the different points
+                face = []
                 for lm in face_lm.landmark:
                     ih, iw, ic = img.shape
                     x, y = int(lm.x * iw), int(lm.y * ih)
-        return img
+                    # single face landmarks
+                    face.append([x,y])
+            # append the landmarks of all the faces
+            faces.append(face)
+        return img, faces
 
 def main():
     cap = cv2.VideoCapture(0)
@@ -45,11 +51,13 @@ def main():
     detector = FaceMeshDetector
     while True:
         success, img = cap.read()
-        img = detector.find_face_mesh(img)
+        img, faces = detector.find_face_mesh(img)
+        if len(faces) != 0:
+            print(faces)
         cur_time = time.time()
         fps = 1 / (cur_time - prev_time)
         prev_time = cur_time
-        cv2.putText(img, f"Comp Scientist + Ecologist, everything will turn green", (20, 70), cv2.FONT_HERSHEY_PLAIN,
+        cv2.putText(img, f"{int(fps)}", (20, 70), cv2.FONT_HERSHEY_PLAIN,
                     1.2,
                     (0, 255, 0), 2)
 
