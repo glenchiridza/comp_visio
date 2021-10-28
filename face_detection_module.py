@@ -45,11 +45,11 @@ class FaceDetector:
         cv2.line(img, (x1, y), (x1, y+l), (255, 0, 255), t)
 
         # bottom right for x and y
-        cv2.line(img, (x, y), (x + l, y), (255, 0, 255), t)
-        cv2.line(img, (x, y), (x, y + l), (255, 0, 255), t)
+        cv2.line(img, (x, y1), (x + l, y1), (255, 0, 255), t)
+        cv2.line(img, (x, y1), (x, y1 + l), (255, 0, 255), t)
         # bottom right x1 and y1
-        cv2.line(img, (x1, y), (x1 - l, y), (255, 0, 255), t)
-        cv2.line(img, (x1, y), (x1, y + l), (255, 0, 255), t)
+        cv2.line(img, (x1, y1), (x1 - l, y1), (255, 0, 255), t)
+        cv2.line(img, (x1, y1), (x1, y - l), (255, 0, 255), t)
 
         return img
 
