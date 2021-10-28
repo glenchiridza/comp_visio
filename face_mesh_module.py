@@ -36,13 +36,16 @@ class FaceMeshDetector:
                                                self.draw_spec, self.draw_spec)
                 # find all the different points
                 face = []
-                for lm in face_lm.landmark:
+                for idx, lm in enumerate(face_lm.landmark):
                     ih, iw, ic = img.shape
                     x, y = int(lm.x * iw), int(lm.y * ih)
+                    cv2.putText(img, str(idx), (x,y), cv2.FONT_HERSHEY_PLAIN,
+                               0.5,
+                               (0, 255, 0), 1)
                     # single face landmarks
                     face.append([x,y])
-            # append the landmarks of all the faces
-            faces.append(face)
+                # append the landmarks of all the faces
+                faces.append(face)
         return img, faces
 
 def main():
@@ -53,7 +56,7 @@ def main():
         success, img = cap.read()
         img, faces = detector.find_face_mesh(img)
         if len(faces) != 0:
-            print(faces)
+            print(faces[0])
         cur_time = time.time()
         fps = 1 / (cur_time - prev_time)
         prev_time = cur_time
