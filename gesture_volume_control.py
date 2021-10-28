@@ -12,7 +12,7 @@ cap.set(3, cam_width)
 cap.set(4, cam_height)
 prev_time = 0
 
-detector = htm.handleDetector(detection_conf=0.7)
+detector = htm.handleDetector(detection_conf=0.75)
 
 while True:
     success, img = cap.read()
@@ -25,8 +25,14 @@ while True:
         x1,y1 = lm_list[4][1], lm_list[4][2]
         x2,y2 = lm_list[8][1], lm_list[8][2]
 
+        #get center of line
+        cx,cy = (x1+x2)//2, (y1+y2)//2
+
         cv2.circle(img, (x1,y1),10,(255,0,255),cv2.FILLED)
         cv2.circle(img, (x2,y2),10,(255,0,255),cv2.FILLED)
+        cv2.line(img,(x1,y1),(x2,y2),(255,0,255),3)
+        cv2.circle(img,(cx,cy),10,(255,0,255),cv2.FILLED)
+
 
     curr_time = time.time()
     fps = 1 / (curr_time - prev_time)
