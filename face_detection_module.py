@@ -24,7 +24,7 @@ class FaceDetector:
                 bbox = int(bboxC.xmin * iw), int(bboxC.ymin * ih), \
                        int(bboxC.width * iw), int(bboxC.height * ih)
                 bounding_boxes.append([bbox, detection.score])
-
+                self.fancy_draw(img,bbox)
                 if draw:
                     cv2.putText(img, f"{int(detection.score[0] * 100)}%", (bbox[0], bbox[1] - 20),
                                 cv2.FONT_HERSHEY_PLAIN,
@@ -32,13 +32,26 @@ class FaceDetector:
                                 (255, 0, 255), 2)
         return img, bounding_boxes
 
-    def fancy_draw(self, img, bbox, l=35, t=10):
+    def fancy_draw(self, img, bbox, l=30, t=6):
         x, y, w, h = bbox
         x1, y1 = x + w, y + h
 
-        cv2.rectangle(img, bbox, (255, 0, 255), 2)
+        cv2.rectangle(img, bbox, (255, 0, 255), 1)
+        # top left for x and y
         cv2.line(img, (x, y), (x + l, y), (255, 0, 255), t)
+        cv2.line(img, (x, y), (x, y+l), (255, 0, 255), t)
+        # top right x1 and y1
+        cv2.line(img, (x1, y), (x1 - l, y), (255, 0, 255), t)
+        cv2.line(img, (x1, y), (x1, y+l), (255, 0, 255), t)
 
+        # bottom right for x and y
+        cv2.line(img, (x, y), (x + l, y), (255, 0, 255), t)
+        cv2.line(img, (x, y), (x, y + l), (255, 0, 255), t)
+        # bottom right x1 and y1
+        cv2.line(img, (x1, y), (x1 - l, y), (255, 0, 255), t)
+        cv2.line(img, (x1, y), (x1, y + l), (255, 0, 255), t)
+
+        return img
 
 def main():
     cap = cv2.VideoCapture("pose_videos/1.mp4")
