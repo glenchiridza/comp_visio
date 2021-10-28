@@ -39,14 +39,15 @@ class FaceMeshDetector:
                 for idx, lm in enumerate(face_lm.landmark):
                     ih, iw, ic = img.shape
                     x, y = int(lm.x * iw), int(lm.y * ih)
-                    cv2.putText(img, str(idx), (x,y), cv2.FONT_HERSHEY_PLAIN,
-                               0.5,
-                               (0, 255, 0), 1)
+                    cv2.putText(img, str(idx), (x, y), cv2.FONT_HERSHEY_PLAIN,
+                                0.5,
+                                (0, 255, 0), 1)
                     # single face landmarks
-                    face.append([x,y])
+                    face.append([x, y])
                 # append the landmarks of all the faces
                 faces.append(face)
         return img, faces
+
 
 def main():
     cap = cv2.VideoCapture(0)
