@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/face_mesh.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_mesh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_mesh_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_mesh_module.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,5 +195,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="662" y="225" key="com.intellij.ide.util.TipDialog/0.27.1366.741@0.27.1366.741" timestamp="1635449579011" />
+    <state x="662" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1635453901137">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="662" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1635453901137" />
   </component>
 </project>
