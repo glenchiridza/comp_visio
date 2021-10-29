@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/open_cv/img_color_spaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open_cv/img_color_spaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_cv/img_color_spaces.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,28 +43,7 @@
       <recent name="$PROJECT_DIR$/pose_videos" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.video_capture">
-    <configuration name="face_mesh_module" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="computer_vision" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_mesh_module.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.img_color_spaces">
     <configuration name="gesture_volume_control" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,6 +107,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="img_color_spaces" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="computer_vision" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/open_cv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_cv/img_color_spaces.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="video_capture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.img_color_spaces" />
         <item itemvalue="Python.video_capture" />
         <item itemvalue="Python.img_capture" />
         <item itemvalue="Python.gesture_volume_control" />
         <item itemvalue="Python.hand_tracking_module" />
-        <item itemvalue="Python.face_mesh_module" />
       </list>
     </recent_temporary>
   </component>
@@ -174,22 +173,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="687" height="175" key="GridCell.Tab.0.bottom" timestamp="1635539021656">
+    <state width="687" height="175" key="GridCell.Tab.0.bottom" timestamp="1635539317454">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1635539021656" />
-    <state width="687" height="175" key="GridCell.Tab.0.center" timestamp="1635539021655">
+    <state width="687" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1635539317454" />
+    <state width="687" height="175" key="GridCell.Tab.0.center" timestamp="1635539317451">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1635539021655" />
-    <state width="687" height="175" key="GridCell.Tab.0.left" timestamp="1635539021654">
+    <state width="687" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1635539317451" />
+    <state width="687" height="175" key="GridCell.Tab.0.left" timestamp="1635539317451">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1635539021654" />
-    <state width="687" height="175" key="GridCell.Tab.0.right" timestamp="1635539021656">
+    <state width="687" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1635539317451" />
+    <state width="687" height="175" key="GridCell.Tab.0.right" timestamp="1635539317451">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1635539021656" />
+    <state width="687" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1635539317451" />
     <state x="342" y="34" key="SettingsEditor" timestamp="1635456850191">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
