@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/open_cv/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open_cv/app_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/open_cv/res/me.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/open_cv/app_start.py" beforeDir="false" afterPath="$PROJECT_DIR$/open_cv/app_start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,8 +43,8 @@
       <recent name="$PROJECT_DIR$/pose_videos" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gesture_volume_control">
-    <configuration name="face_detection_module" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.app_start">
+    <configuration name="app_start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -55,11 +52,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/open_cv" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_detection_module.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_cv/app_start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -154,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app_start" />
         <item itemvalue="Python.gesture_volume_control" />
         <item itemvalue="Python.hand_tracking_module" />
         <item itemvalue="Python.face_mesh_module" />
         <item itemvalue="Python.face_mesh" />
-        <item itemvalue="Python.face_detection_module" />
       </list>
     </recent_temporary>
   </component>
@@ -176,22 +173,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="687" height="175" key="GridCell.Tab.0.bottom" timestamp="1635457450970">
+    <state width="687" height="175" key="GridCell.Tab.0.bottom" timestamp="1635538611319">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1635457450970" />
-    <state width="687" height="175" key="GridCell.Tab.0.center" timestamp="1635457450970">
+    <state width="687" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1635538611319" />
+    <state width="687" height="175" key="GridCell.Tab.0.center" timestamp="1635538611319">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1635457450970" />
-    <state width="687" height="175" key="GridCell.Tab.0.left" timestamp="1635457450969">
+    <state width="687" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1635538611319" />
+    <state width="687" height="175" key="GridCell.Tab.0.left" timestamp="1635538611318">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1635457450969" />
-    <state width="687" height="175" key="GridCell.Tab.0.right" timestamp="1635457450970">
+    <state width="687" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1635538611318" />
+    <state width="687" height="175" key="GridCell.Tab.0.right" timestamp="1635538611319">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="687" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1635457450970" />
+    <state width="687" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1635538611319" />
     <state x="342" y="34" key="SettingsEditor" timestamp="1635456850191">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
