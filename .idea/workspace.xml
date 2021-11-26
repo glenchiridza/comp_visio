@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ddab8fe-00fe-4a2c-a5f5-ab6c05a1d1db" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/open_cv/draw_shapes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/open_cv/join_images.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/open_cv/warp_perspective.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +45,7 @@
       <recent name="$PROJECT_DIR$/pose_estimate" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.draw_shapes">
+  <component name="RunManager" selected="Python.join_images">
     <configuration name="draw_shapes" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -87,27 +88,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="img_capture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="computer_vision" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/open_cv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_cv/img_capture.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="img_color_spaces" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -129,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="video_capture" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="join_images" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="computer_vision" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -141,7 +121,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_cv/video_capture.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_cv/join_images.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="warp_perspective" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="computer_vision" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/open_cv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/open_cv/warp_perspective.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -152,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.join_images" />
+        <item itemvalue="Python.warp_perspective" />
         <item itemvalue="Python.draw_shapes" />
         <item itemvalue="Python.image_resize" />
         <item itemvalue="Python.img_color_spaces" />
-        <item itemvalue="Python.video_capture" />
-        <item itemvalue="Python.img_capture" />
       </list>
     </recent_temporary>
   </component>
@@ -174,22 +175,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1341" height="176" key="GridCell.Tab.0.bottom" timestamp="1637912117536">
+    <state width="1341" height="98" key="GridCell.Tab.0.bottom" timestamp="1637913023854">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1341" height="176" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1637912117536" />
-    <state width="1341" height="176" key="GridCell.Tab.0.center" timestamp="1637912117536">
+    <state width="1341" height="98" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1637913023854" />
+    <state width="1341" height="98" key="GridCell.Tab.0.center" timestamp="1637913023853">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1341" height="176" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1637912117536" />
-    <state width="1341" height="176" key="GridCell.Tab.0.left" timestamp="1637912117535">
+    <state width="1341" height="98" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1637913023853" />
+    <state width="1341" height="98" key="GridCell.Tab.0.left" timestamp="1637913023852">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1341" height="176" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1637912117535" />
-    <state width="1341" height="176" key="GridCell.Tab.0.right" timestamp="1637912117536">
+    <state width="1341" height="98" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1637913023852" />
+    <state width="1341" height="98" key="GridCell.Tab.0.right" timestamp="1637913023853">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1341" height="176" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1637912117536" />
+    <state width="1341" height="98" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1637913023853" />
     <state width="1341" height="218" key="GridCell.Tab.1.bottom" timestamp="1637909647445">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
