@@ -1,14 +1,16 @@
 import cv2
+import numpy as np
 
-img = cv2.imread("res/me.jpg")
+img = cv2.imread("res/runner.png")
 
-imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+imgBlur = cv2.GaussianBlur(imgGray,(7,7),0)
+imgCanny = cv2.Canny(img,150,200)
+imgDialation = cv2.dilate(imgCanny,)
 
-imgBlur = cv2.GaussianBlur(imgGray, (7, 7), 0)
+cv2.imshow("Image Output",imgGray)
+cv2.imshow("Image Blur",imgBlur)
+cv2.imshow("Image Canny",imgCanny)
 
-# edge detector, canny edge detector
-imgCanny = cv2.Canny(img, 100, 100)
-
-cv2.imshow("GrayScale Image", imgGray)
-cv2.imshow("Blur Image", imgBlur)
 cv2.waitKey(0)
+
